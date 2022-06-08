@@ -1,0 +1,639 @@
+@media (min-width: 1500px) and (max-width: 1700px) {
+.img-left-admin-top canvas {
+    width: 140px;
+    height: 140px!important;
+}
+.circle strong {
+    top: 50px;
+}
+.img-left-admin-top img {
+    width: 205px;
+}
+.top-right-box-inner h4 {
+    margin-top: 0px;
+}
+.admin-status-title-count h4 a {
+    font-size: 17px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+ .cat-box h4 {
+    font-size: 18px;
+} 
+.admin-status-title-count h4 a {
+    font-size: 14px;
+}
+.admin-status-title-count {
+    padding: 11px 10px;
+}
+
+span.top-count {
+    width: 33px;
+    height: 33px;
+    padding-top: 8px;
+    font-size: 16px;
+}
+.top-right-box-inner h4 {
+    color: #0e1a35;
+    font-weight: 600;
+    margin-top: 26px;
+    font-size: 14px;
+}
+h1.top-admin-title {
+    font-size: 42px;
+	letter-spacing: 6px;
+}
+.img-left-admin-top img {
+    width: 100%;
+    max-width: 181px;
+}
+ul.personal-infoul li img {
+    margin: 6px 11px 17px;
+}
+ul.personal-infoul li, ul.proinfo-ul li {
+    font-size: 15px;
+}
+p.addressp {
+    font-size: 15px;
+}
+h3.title-profile {
+    font-size: 20px;
+}
+.statusbox label {
+    padding: 12px;
+    width: 140px;
+    height: 72px;
+}
+.circle strong {
+    top: 41px;
+    line-height: 36px;
+    font-size: 30px;
+}
+.img-left-admin-top canvas {
+    width: 113px;
+    height: 113px!important;
+}
+.img-left-admin-top .circle {
+    width: 135px;
+    margin: 6px 20px 6px;
+}
+.w-30 {
+    width: 20%;
+}
+.w-70 {
+    width: 80%;
+}
+.media.own-media-box .media-body h5 {
+    font-size: 14px;
+    padding-top: 7px;
+}
+.medialeft-img-user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 23px;
+    margin-top: 8px;
+}
+.medialeft-img-user-text {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 5px;
+    top: 20px;
+    left: 15px;
+}
+.media.own-media-box {
+    padding: 12px 15px;
+}
+.media.own-media-box .media-body h5 {
+    font-size: 14px;
+    padding-top: 7px;
+}
+.media.own-media-box .media-body p {
+    font-size: 13px;
+}
+h3.adminname-top {
+    font-size: 23px;
+}
+ul.sidenavbarul li a {
+    font-size: 15px;
+}
+.admin-status-title-count h4 {
+    margin-top: 2px;
+}
+.row.admin-status-row .col-md-3 {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+.row.admin-status-row .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+span.w-100.float-left.text-center.viewmorebtnprofile {
+    font-size: 13px;
+}
+ul.new-stylist-ul li {
+    font-size: 13px;
+}
+h3.table-title-main {
+    font-size: 20px;
+}
+ol.breadcrumb.breadcrumb-own-admin li {
+    font-size: 18px;
+}
+ol.breadcrumb.breadcrumb-own-admin li a {
+    font-size: 18px;
+}
+.table-bordered td {
+    font-size: 13px;
+}
+table.table-bordered.dataTable th {
+    font-size: 14px;
+}
+div.dataTables_info {
+    font-size: 14px;
+}
+.dataTables_paginate a {
+    font-size: 14px;
+}
+/* .daycontainer h3 { */
+    /* padding-top: 0px; */
+/* } */
+.desk-mt-20{margin-top:20px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+ .cat-box h4 {
+    font-size: 18px;
+} 
+.row.profile-info-row .col-lg-4,.row.profile-info-row .col-lg-8 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 100%;
+    max-width: 100%;
+}
+.main-container-inner .col-md-4, .main-container-inner .col-md-8 {
+    -ms-flex: 0 0 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+.col-md-3 {
+    -ms-flex: 0 0 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.statusbox label {
+    padding: 2px;
+    margin-right: 27px;
+}
+.statusbox label h2 {
+    font-size: 16px;
+    padding-top: 15px;
+}
+.statusbox input[type="radio"]:checked + label::after {
+    font-size: 16px;
+    bottom: -14px;
+    height: 28px;
+    width: 28px;
+    line-height: 29px;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+} 
+.row.profile-info-row .nav-tabs .nav-link {
+    min-width:90px;
+    font-size: 18px;
+    padding: 10px 12px;
+}
+main {
+    padding: 54px 30px 45px 306px;
+}
+.statusbox label {
+    width: 98px;
+    height: 55px;
+}
+.stylist_gallery tr {
+    width: 50%;
+    margin: 0px;
+}
+.haircutimgbox img {
+    width: 100%;
+    min-width: 180px;
+    max-width: 100%;
+    min-height: 256px;
+    max-height: 180px;
+}
+.daystatusbox label {
+    width: 132px;
+}
+.table-wrapper {
+    overflow: auto;
+    padding: 50px 0px;
+}
+.dataTables_length {
+    width: 100%;
+    padding-left: 13px;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left!important;
+    padding-left: 13px;
+}
+.daystatusbox input[type="radio"]:checked + label::after {
+    font-size: 16px;
+    bottom: 9px;
+    left: 24px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+.daystatusbox label h2 {
+    font-size: 17px;
+    margin-top: 11px;
+    padding-left: 5px;
+}
+.daystatusbox label {
+    width: 132px;
+    height: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    text-align: right;
+}
+.collapse:not(.show) {
+    display: block;
+}
+ul.navbar-nav.mr-auto {
+    flex-direction: row;
+}
+.notification-li .dropdownmenutop {
+    display: none;
+}
+.dropdown-menu.dropdownmenutop.show {
+    display: block;
+    z-index: 99999;
+    position: absolute;
+}
+.sidemenu-wrapper {
+    z-index: 9;
+}
+.img-left-admin-top img {
+    width: 166px;
+}
+h3.cont-total {
+    top: 40%;
+}
+.row.admin-status-row .col-md-4 {
+    margin-bottom: 20px;
+}
+.row.admin-status-row .col-lg-4.col-md-12 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.admin-status-box .row.no-gutters .col-lg-3.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.row.admin-status-row .col-lg-4.col-md-12 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.admin-status-box .row.no-gutters .col-lg-3.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+	.row.admin-status-row .col-md-4 {
+    margin-bottom: 20px;
+}
+.main-container-inner .col-md-4, .main-container-inner .col-md-8 {
+    -ms-flex: 0 0 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+.col-md-3 {
+    -ms-flex: 0 0 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.statusbox label {
+    padding: 2px;
+    margin-right: 27px;
+}
+.statusbox label h2 {
+    font-size: 16px;
+    padding-top: 15px;
+}
+.statusbox input[type="radio"]:checked + label::after {
+    font-size: 16px;
+    bottom: -14px;
+    height: 28px;
+    width: 28px;
+    line-height: 29px;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+} 
+.row.profile-info-row .nav-tabs .nav-link {
+    min-width:90px;
+    font-size: 18px;
+    padding: 10px 12px;
+}
+main {
+    padding: 54px 30px 45px 306px;
+}
+.statusbox label {
+    width: 98px;
+    height: 55px;
+}
+.stylist_gallery tr {
+    width: 50%;
+    margin: 0px;
+}
+.haircutimgbox img {
+    width: 100%;
+    min-width: 180px;
+    max-width: 100%;
+    min-height: 180px;
+    max-height: 180px;
+}
+.daystatusbox label {
+    width: 132px;
+}
+.table-wrapper {
+    overflow: auto;
+    padding: 50px 0px;
+}
+.dataTables_length {
+    width: 100%;
+    padding-left: 13px;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left!important;
+    padding-left: 13px;
+}
+.daystatusbox input[type="radio"]:checked + label::after {
+    font-size: 16px;
+    bottom: 9px;
+    left: 24px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+.daystatusbox label h2 {
+    font-size: 17px;
+    margin-top: 11px;
+    padding-left: 5px;
+}
+.daystatusbox label {
+    width: 132px;
+    height: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    text-align: right;
+}
+.collapse:not(.show) {
+    display: block;
+}
+ul.navbar-nav.mr-auto {
+    flex-direction: row;
+}
+.notification-li .dropdownmenutop {
+    display: none;
+}
+.dropdown-menu.dropdownmenutop.show {
+    display: block;
+    z-index: 99999;
+    position: absolute;
+}
+.sidemenu-wrapper {
+    z-index: 99;
+}
+}
+@media (min-width: 300px) and (max-width: 767px) {
+	.row.admin-status-row .col-md-4 {
+    margin-bottom: 20px;
+}
+    .img-left-admin-top img {
+    width: 100%;
+}
+
+.daystatusbox.d-flex {
+    display: unset!important;
+}
+main {
+    padding-left: 0px;
+}
+body.open .sidemenu-wrapper {
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    left: 0px;
+}
+body.open i.fa.fa-bars.closeside {
+    display: block;
+}
+i.fa.fa-times.mob-close-icon {
+    position: absolute;
+    right: 9px;
+    color: #040404;
+    background: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 6px;
+    display: block;
+    top: 6px;
+}
+h1.top-admin-title {
+    font-size: 24px;
+    letter-spacing: 6px;
+}
+.collapse:not(.show) {
+    display: block;
+}
+/*css mobile*/
+.main-container-inner .col-md-4, .main-container-inner .col-md-8 {
+    -ms-flex: 0 0 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+.col-md-3 {
+    -ms-flex: 0 0 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.statusbox label {
+    padding: 2px;
+    margin-right: 27px;
+}
+.statusbox label h2 {
+    font-size: 16px;
+    padding-top: 15px;
+}
+.statusbox input[type="radio"]:checked + label::after {
+    font-size: 16px;
+    bottom: -14px;
+    height: 28px;
+    width: 28px;
+    line-height: 29px;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+} 
+.row.profile-info-row .nav-tabs .nav-link {
+    min-width:90px;
+    font-size: 18px;
+    padding: 10px 12px;
+}
+main {
+    padding: 54px 30px 45px 306px;
+}
+.statusbox label {
+    width: 98px;
+    height: 55px;
+}
+.stylist_gallery tr {
+    width: 50%;
+    margin: 0px;
+}
+.haircutimgbox img {
+    width: 100%;
+    min-width: 180px;
+    max-width: 100%;
+    min-height: 180px;
+    max-height: 180px;
+}
+.daystatusbox label {
+    width: 132px;
+}
+.table-wrapper {
+    overflow: auto;
+    padding: 50px 0px;
+}
+.dataTables_length {
+    width: 100%;
+    padding-left: 13px;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left!important;
+    padding-left: 13px;
+}
+.daystatusbox input[type="radio"]:checked + label::after {
+    font-size: 16px;
+    bottom: 9px;
+    left: 24px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+.daystatusbox label h2 {
+    font-size: 17px;
+    margin-top: 11px;
+    padding-left: 5px;
+}
+.daystatusbox label {
+    width: 132px;
+    height: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    text-align: right;
+}
+.collapse:not(.show) {
+    display: block;
+}
+ul.navbar-nav.mr-auto {
+    flex-direction: row;
+}
+.notification-li .dropdownmenutop {
+    display: none;
+}
+.dropdown-menu.dropdownmenutop.show {
+    display: block;
+    z-index: 99999;
+    position: absolute;
+}
+.sidemenu-wrapper {
+    z-index: 9;
+}
+i.fa.fa-times.closeiconmob {
+    position: absolute;
+    right: -15px;
+    top: 29px;
+    color: #f9f9f9;
+    background: #444343;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 4px;
+    border: 2px solid #ccc;
+    font-size: 17px;
+}
+.close a.mobilelogoimg {
+    visibility: visible;
+}
+.open a.mobilelogoimg {
+    display: none;
+}
+.open a.logoimg {
+    display: block;
+}
+.close a.logoimg {
+    display: none;
+}
+header {
+    z-index: 9;
+}
+i.fa.fa-bars.mob-togglebtn {
+    position: absolute;
+    right: -15px;
+    top: 29px;
+    color: #f9f9f9;
+    background: #444343;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 4px;
+    border: 2px solid #ccc;
+    font-size: 17px;
+} 
+.close a.mobilelogoimg img {
+    float: right;
+    padding-right: 19px;
+}
+body.close ul.sidenavbarul li a span.menuname {
+    display: none;
+}
+body.close ul.sidenavbarul li a img {
+    width: 25px;
+    float: right;
+    margin-right: 27px;
+}
+body.close ul.sidenavbarul li {
+    margin-bottom: 23px;
+}
+body.close li.sidebar-dropdown i.fa.fa-angle-right {
+    position: absolute;
+    right: 15px;
+}
+body.close main {
+    padding: 54px 30px 45px 136px;
+}
+body.open i.fa.fa-times.closeiconmob {
+    visibility: visible;
+}
+body.close main {
+    padding: 54px 0px 39px 0px;
+}
+body.close .sidemenu-wrapper {
+    margin-left: -283px;
+}
+body.close i.fa.fa-bars.mob-togglebtn {
+    right: -36px;
+}
+/*css mobile*/
+}

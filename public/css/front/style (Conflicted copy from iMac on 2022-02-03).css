@@ -1,0 +1,239 @@
+ul,
+li,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif !important;
+}
+.banar {
+  background: url(../images/back.jpeg);
+  background-size: 100%;
+  padding: 150px;
+}
+.bannerleft {
+  margin-top: 100px;
+}
+.bannerleft p {
+  padding: 20px 0px 40px 0px;
+}
+.bannerleft h1 {
+  font-size: 60px;
+}
+.get a {
+  padding: 15px 30px 15px 30px;
+  color: rgb(68, 30, 78);
+}
+.banarright {
+  margin-top: 60px;
+}
+.banarright img {
+  width: 100%;
+  height: 100%;
+}
+header {
+  position: absolute;
+
+  width: 100%;
+}
+.gallery {
+  padding: 40px 0px 0px 0px;
+}
+.pic {
+  opacity: 0.7;
+  background-color: #1e5fd6;
+  position: relative;
+  margin-top: 60px;
+}
+.pic h3 {
+  padding: 20px 0px 20px 0px;
+  max-width: 250px;
+  line-height: 30px;
+  width: 100%;
+}
+.explore {
+  padding-top: 200px;
+}
+.pic-inner {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  color: white;
+}
+.pic img:hover {
+  opacity: 0.7;
+  background-color: #0c59db;
+}
+.pic1 {
+  margin: 60px 0px 100px 0px;
+}
+
+.pic2 {
+  margin-top: 60px;
+  padding: 80px;
+
+  background-color: #fafafa;
+}
+
+.pic2 button {
+  border-color: rgb(63, 101, 220);
+  color: rgb(63, 101, 220);
+  padding: 15px 30px 15px 30px;
+  background-color: white;
+}
+
+.nav-item a {
+  padding: 20px;
+  margin: 10px;
+}
+.bannerleft a {
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+}
+.navbar a {
+  color: black;
+  border-radius: 4px;
+}
+.pic2 button:hover {
+  background-color: #1e5fd6;
+}
+.box {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #eeeeee;
+}
+.box1 {
+  background-color: #0c59db;
+  margin-top: 30px;
+  padding: 33px;
+}
+.box1 a {
+  text-align: center;
+  color: white;
+  margin: 10px 0px 0px 0px;
+  padding: 12px 20px 12px 20px;
+}
+
+.box p {
+  color: rgb(144, 144, 144);
+}
+.left {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.solution {
+  background: url(../images/solutionpic.png);
+  background-size: 100%;
+  padding: 300px;
+  margin-top: 80px;
+}
+.text {
+  padding: 30px;
+  color: rgb(128, 130, 156);
+  border: 6px solid rgb(128, 130, 156);
+}
+.button {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.services {
+  text-align: center;
+  background: url(../images/service.jpeg);
+  background-size: 100%;
+  color: white;
+  max-width: 1400px;
+
+  padding: 120px 0px 120px 0px;
+  margin: -78px auto;
+}
+.text-inner h2 {
+  margin: 10px;
+}
+.learn h4 {
+  position: relative;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 4px solid rgb(230, 238, 251);
+  margin: 40px 0px 0px 0px;
+}
+.learn p {
+  margin: 20px 0px 0px 0px;
+  color: rgb(144, 144, 144);
+}
+.learn button {
+  margin: 25px 0px 0px 0px;
+  padding: 10px 25px 10px 25px;
+
+  border-color: royalblue;
+  background-color: white;
+  color: royalblue;
+}
+
+.learn:hover h4:before {
+  background: #0c59db;
+  width: 200px;
+}
+.learn h4:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  bottom: -4px;
+  background-color: #0c59db;
+  transition: all ease 1s;
+}
+.learn {
+  padding: 0px 0px 60px 0px;
+}
+.slide {
+  background-color: rgb(240, 244, 249);
+  margin: 10px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
+}
+.slidebar {
+  text-align: center;
+  color: rgb(63, 101, 220);
+}
+.slidebar h2 {
+  padding: 15px 0px 0px 0px;
+  color: rgb(24, 30, 78);
+}
+
+.title {
+  text-align: center;
+  padding: 100px 0px 0px 0px;
+  color: #0c59db;
+}
+.title h2 {
+  padding: 10px 0px 0px 0px;
+  color: rgb(24, 30, 78);
+}
+.teamleader {
+  position: relative;
+  padding: 60px 0px 0px 0px;
+}
+.name {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  margin: -60px;
+  padding: 30px 30px 30px 30px;
+  left: 100px;
+  right: 100px;
+  border-bottom: blueviolet;
+}
+.teamleader i {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  color: white;
+}
