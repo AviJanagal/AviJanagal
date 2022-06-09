@@ -20,8 +20,9 @@ class SessionController extends Controller
         $level = \App\Level::get();
         $module = \App\Module::get();
         $all_session = \App\Session::get();
+        $last_entry = \App\Session::orderBy('id', 'DESC')->first();
         $language = \App\Language::get();
-        return view('session',compact('type','level','module','all_session','language'));
+        return view('session',compact('type','level','module','all_session','language','last_entry'));
     }
 
     /**
@@ -93,6 +94,9 @@ class SessionController extends Controller
             } 
         }
         $session->published_by = $request->publish;
+        $session->save();
+        // $md = $session->media;
+        // return $md;
         if($session->save()){
           return redirect()->route('session.index')->with(['alert'=>'success','message'=>'Added successfully!.']);
         } else {

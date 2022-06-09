@@ -1,177 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}" />
-        <title>Bridge App</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home</title>
+        <!-- Bootstrap -->
         <link rel="icon" href="{{asset('images/moblogo.png')}}" type="image/png" sizes="16x16" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-        <link href="{{asset('css/style.css')}}" rel="stylesheet" />
-        <link href="{{asset('css/front/style.css')}}" rel="stylesheet" />
         <link href="{{asset('css/responsive.css')}}" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="{{asset('css/dataTables.min.css')}}" />
-        <link rel="stylesheet" type="text/css" href="{{asset('css/timepicker.min.css')}}" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"></script>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
-        
-        
-      
-
-      
-    <!-- Delete modal jQuery-->
-        <script>
-            function deleteData(url) {
-                $("#deleteForm").attr("action", url);
-                $('#myModal').modal('show');
-            }
-        </script>
-<!-- Delete modal jQuery end -->
-<script>
-    $('input:radio[name="optradio"]').change(
-    function(){
-        if ($(this).is(':checked') && $(this).val() == 'link') {
-           $('#sv').addClass('d-none');
-           $('#session_video').val('');
-           $('#sl').removeClass('d-none');
-        }
-        else{
-           $('#sv').removeClass('d-none');
-           $('#session_link').val('');
-           $('#sl').addClass('d-none');
-        }
-    });
-
-</script>
-
-<script>
-  $(document).ready(function () {
-    var i = $("input[type=radio][name=optradio]:checked").val();
-    if(i == 'link'){
-        $('#sv').addClass('d-none');
-        $('#sl').removeClass('d-none');
-    }
-    else{
-        $('#sv').removeClass('d-none');
-        $('#sl').addClass('d-none');
-    }
-});
-    </script>
-        
-
-
-
-<script>
-$( "#sessionForm" ).validate({
-    rules: {
-        module_id: {
-		   required: true,
-		},
-        language: {
-		   required: true,
-		},
-        level: {
-		   required: true,
-		},
-        optradio: {
-		   required: true,
-		},
- 
-    }
-});
-</script>
-
-<script>
-$( "#myform" ).validate({
-	  rules: {
-		first_name: {
-		   required: true,
-		},
-		last_name: {
-		   required: true,
-		},
-		address: {
-		   required: true,
-		},
-		state: {
-		   required: true,
-		},
-		person_type: {
-		   required: true,
-		},
-		apartment: {
-		   required: true,
-		},
-		city: {
-		   required: true,
-		},
-		zip_code: {
-		   required: true,
-           maxlength: 6,
-           minlength : 6
-		},
-        password : {
-            minlength : 8
-        },
-        password_confirmation : {
-            minlength : 8,
-            equalTo : "#password"
-        },
-        email : {
-            email: true,
-            minlength : 8
-        },
-        email_confirmation : {
-            minlength : 8,
-            equalTo : "#email"
-        },
-        phone_number: {
-            required: true,
-            number: true,
-            minlength: 10,
-            maxlength: 10
-		}
-	  }
-	});
-</script>
-
-
-<script>
-$('select[name="select_module"]').change(function() {
-    alert("kfdsdfds");
-
-});
-
-</script>
-
+        <link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet"/>
+        <link href="{{asset('css/style.css')}}" rel="stylesheet" />
     </head>
-    <body class="open">
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 ryt-dropdown">
-                        <div class="float-right">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item dropdown dropdown-right notification-li">
-                                            <a class="nav-link dropdown-toggle user-rightimg user-rightimg" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="{{asset('images/favicon.png')}}" /><span class="">Admin</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-      
-    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img class="" src="{{asset('images/logomain.png')}}" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {{ (request()->is('home')) ? 'active' : '' }}" href="{{route('home')}}">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ (request()->is('module')) ? 'active' : '' }}" href="{{route('module.index')}}">Module</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ (request()->is('session')) ? 'active' : '' }}" href="{{route('session.index')}}">Session</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{in_array(Route::currentRouteName(),['all_students','view_student_detail']) ? 'active' : '' }}" href="{{route('all_students')}}">All Students</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class=" nav-link {{ (request()->is('logout')) ? 'active' : '' }}" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                            <img class="logouticon" src="{{asset('images/loguot.png')}}" />
+                            <span class="menuname">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">@csrf</form>
+                                Log out
+                            </span>
+                        </a>
+                        <!-- <a class="nav-link {{ (request()->is('logout')) ? 'active' : '' }}" href="{{ route('logout') }}"><img class="logouticon" src="{{asset('images/loguot.png')}}" alt="logo" onclick="event.preventDefault();document.getElementById('logout-form').submit();"> Logout</a> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>

@@ -8,7 +8,7 @@
 						<div class="logoleftbox"> <img src="{{asset('images/mainpic1.png')}}"> <img src="{{asset('images/mainpic2.png')}}" /> <img src="{{asset('images/mainpic5.png')}}"> </div>
 					</div>
 					<div class="col-sm-6">
-						<div class="buttonrightbox"> <a href="{{route('login')}}">Sign Up</a> </div>
+						<div class="buttonrightbox"> <a href="{{route('login')}}">Sign In</a> </div>
 					</div>
 				</div>
 			</div>

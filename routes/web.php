@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->route('student_register');
+    return redirect()->route('login');
 });
 
 Auth::routes();
@@ -22,7 +22,8 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('module', 'ModuleController');
     Route::delete('del_module/{id}','ModuleController@del_module')->name('del_module');
-
+    Route::get('view_student_detail/{id}','HomeController@view_student_detail')->name('view_student_detail');
+    Route::get('all_students','HomeController@all_students')->name('all_students');
     Route::resource('session', 'SessionController');
     Route::get('view_related_sessions/{id}','ModuleController@view_related_sessions')->name('view_related_sessions');
 });

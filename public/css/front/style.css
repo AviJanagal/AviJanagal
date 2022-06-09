@@ -11,24 +11,19 @@ h6,
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
 }
 .mainloginimgboxright img {
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
 }
 .mainlogintextleftbox img {
-  width: 70%;
+  width: 80%;
   /* height: 100%; */
   margin-left: 50px;
 }
-.mainlogintextleftbox {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: 483px;
-  max-width: 100%;
-}
+
 .mainlogintextleftbox h1 {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -48,11 +43,11 @@ body {
   margin-bottom: 20px;
 }
 label.emaillabel {
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 .form-check-label {
   margin-bottom: 0;
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 .mainlogintextleftbox h6 {
   text-align: center;
@@ -60,18 +55,36 @@ label.emaillabel {
 }
 a.forgottext {
   float: right;
+  margin-right: 15px;
+  font-size: 12px;
+  color: #902A8E;
 }
-.mainloginbox {
-background-image: url(../images/background\image.png);
-width: 100%;
-height: 100%;
-background-repeat: no-repeat;
-background-size: 100%;
 
+
+
+.custom-setting {
+  font-size: 12px;
+  margin-left: 35px;
+}
+
+.custom-box {
+  margin-left: 15px;
+  /* margin-bottom: -9px; */
+  margin-top: 0px;
+}
+h6.account {
+  margin-top: 20px;
+  font-size: 12px;
+  color:#4E4E4E;
+}
+a.sign-link {
+  margin-left: 5px;
+  color: #902A8E;
+  font-size: 13px;
 }
 /* sign up css coding start */
 .logoleftbox img {
-  width: 120px !important;
+  width: 120px;
 }
 .buttonrightbox {
   float: right;
@@ -86,10 +99,14 @@ background-size: 100%;
 }
 .buttonrightbox {
   float: right;
-  margin-top: 45px !important;
+  margin-top: 45px;
 }
-.headertop{
-  box-shadow: 0px 11px 19px #00000005;
+.headertop {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  background: #fff;
+  box-shadow: 0px 0px 26px #00000026;
 }
 .headingboxright img {
   /* height: 100vh; */
@@ -107,14 +124,14 @@ header {
   color: white;
   margin-left: 60px;
   margin-top: 50px;
-  font-weight: 900 !important;
-  font-size: 40px !important;
+  font-weight: 900;
+  font-size: 40px;
 }
 .signupformboxleft h2 {
   text-align: center;
   margin-top: 40px;
-  font-weight: 600 !important;
-  font-size: 30px !important;
+  font-weight: 600;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 .formbuttonbottom {
@@ -133,22 +150,21 @@ header {
 }
 .bottomtext {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 a.sign {
   margin-left: 10px;
   color: #902A8E;
   text-decoration: none;
+  font-size: 13px;
 }
 .inputlabel {
-  color: #060606 !important;
-  margin-bottom: 4px !important;
-  font-size: 15px !important;
-  font-weight: 400;
+  color: #060606;
+  margin-bottom: 4px;
+  font-size: 15px;
 }
 footer {
   background-color: #4D4D4D;
-  margin-top: 30px;
 }
 .footertextinner {
   text-align: center;
@@ -156,23 +172,24 @@ footer {
   z-index: 9;
 }
 .footertextinner h4 {
-  margin-top: 30px;
+  margin-top: 24px;
   margin-bottom: 10px;
-  font-size: 20px !important;
+  font-size: 17px;
 }
 .footertextinner h5 {
-  font-size: 15px !important;
+  font-size: 14px;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 .headingboxright {
   position: fixed;
   z-index: -1;
 }
 .custom-control {
-  box-shadow: 0px 0px 19px 19px #00000005 !important;
-  border: 0px !important;
-  height: 50px !important;
-  font-size: 13px !important;
+  box-shadow: 0px 0px 19px 19px #00000005;
+  border: 0px;
+  height: 50px!important;
+  font-size: 13px;
 }
 header {
   position: fixed;
@@ -180,9 +197,380 @@ header {
   background: #fff;
   z-index: 3;
 }
-main {
-  padding-top: 122px !important;
-}
 .error{
-  color:red;
+  color:rgb(255, 0, 0);
+  font-size: 13px;
+}
+main {
+  padding-top: 122px;
+}
+label.selectstatelabel {
+  font-size: 17px;
+  font-weight: 600;
+}
+.bottomtext h6 {
+  color:#4E4E4E;
+  font-size: 12px;
+}
+.mainloginimgboxright:before {
+  position: absolute;
+  content: "";
+  top: 94px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/mainimageback.png);
+  background-size: 100%;
+}
+
+/* home page css start now */
+img.topimagecustom1 {
+  width: 100px;
+}
+img.topimagecustom2 {
+  width: 137px;
+}
+.logoleft img {
+  margin-top: 14px;
+}
+.mainmenubar ul li a span {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #902A8E;
+}
+.mainmenubar ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+.mainmenubar ul {
+  margin-top: 17px;
+  margin-bottom: 0px;
+}
+.mainmenubar ul li a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+img.topimagecustom1 {
+  width: 85px;
+  margin-right: 17px;
+}
+.mainmenubar ul li a.active span,.mainmenubar ul li a:hover span {
+  background: #902a8e;
+}
+p.custom-text {
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+.mainmenubar ul li a i {
+  font-size: 26px;
+  color: #902A8E;
+}
+p.custom-text {
+  margin-top: 12px;
+  font-size: 13px;
+}
+.mainmenubar ul li a img {
+  width: 28px;
+}
+.rightbuttonbox {
+  margin-top: 21px;
+}
+button.dropbtn i.fa.fa-angle-right {
+  transform: rotate(90deg);
+  position: relative;
+  top: 0px;
+  font-size: 21px;
+}
+button.btn.btn-secondary.btn-lg.dropdown-toggle.english-button {
+  background-color: #902A8E;
+  border-radius: 10px;
+}
+img.english-img {
+  width: 20px;
+  margin-right: 10px;
+}
+.imglogo img {
+  width: 227px;
+  margin-bottom: 30px;
+}
+.lefttextbox {
+  text-align: center;
+}
+.explorebutton a {
+  text-decoration: none;
+  background-color: #902A8E;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  width: 100%;
+  display: block;
+}
+.textinnerbox p {
+  margin-bottom: 40px;
+  text-align: justify;
+  font-weight: 500;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.session-box h3 {
+  margin-top: 30px;
+  color: #902A8E;
+  margin-bottom: 50px;
+}
+.sidemenubox1 {
+  position: relative;
+  padding: 24px;
+  border-radius: 31px;
+  width: 300px;
+  margin: 30px auto 64px;
+  display: block;
+}
+
+.color1bix{background-color: #FFE8D1;}
+.color2bix{background-color: #CEEDD2;}
+.color3bix{background-color: #E1EFFB;}
+
+.iconboxtop {
+  position: absolute;
+  padding: 10px;
+  border-radius: 50%;
+  top: -36px;
+  /* left: 0px; */
+  box-shadow: 0px 0px 39px 39px #00000005;
+  background-color: #fff;
+  right: 194px;
+}
+.explorebutton a:hover{
+  color: white;
+  text-decoration: none;
+}
+.mainmenubar ul li a:hover {
+  color: white;
+  background-color: whitesmoke;
+  transition: all ease 1s;
+}
+img.imgvideoal {
+  width: 100%;
+}
+h6.sidetextinner {
+  margin-top: 12px;
+}
+h2.sidenumber {
+  font-size: 25px;
+}
+thead.table-style {
+  background-color: #902A8E;
+  color: white;
+}
+.mainmenubar ul li span img.image-custom1 {
+  position: absolute;
+}
+.mainmenubar ul li a.active span img.image-custom1,.mainmenubar ul li a:hover span img.image-custom1 {
+  opacity: 0;
+}
+.mainmenubar ul li a:hover,.mainmenubar ul li a.active {
+  color: #902a8e!important;
+  text-decoration: none;
+}
+
+
+/* module css for dilawar sir */
+
+.sestionbox-item ul {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.sestionbox-item:hover {
+  background: #902a8e14;
+}
+
+.sestionbox-item {
+  box-shadow: inset 0px 0px 0px #00000029, 0px 0px 30px #00000029;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all ease 1s;
+}
+.sestionbox-item-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all ease 1s;
+}
+.sestionbox-item-image:after {
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  background: #00000052;
+  content: "";
+  z-index: 9;
+  width: 100%;
+  top: 0px;
+  border-radius: 11px;
+  z-index: 2;
+}
+.sestionbox-item:hover img {
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.sestionbox-item-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.sestionbox-item-image p {
+  position: absolute;
+  bottom: -7px;
+  left: 16px;
+  border: 1px solid #707070;
+  background: #fff;
+  color: #000;
+  z-index: 5;
+  padding: 2px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.sestionbox-item ul li {
+  box-shadow: 0px 0px 6px #00000029;
+  padding: 5px 10px;
+  border-radius: 7px;
+  float: left;
+  list-style: none;
+  margin: 10px 11px 10px 0px;
+  font-size: 14px;
+  color: #902A8E;
+  background: #fff;
+}
+h1,h2,h3,h4,h5,h6,body,ul,li,p{margin: 0px;padding: 0px;}
+.sestionbox-item h6 {
+  font-size: 13px;
+  display: inline;
+  color: #686868;
+}
+.sestionbox-item h6 span {
+  font-weight: bold;
+  color: #000;
+  margin-left: 6px;
+}
+.rightmodulebox h2 {
+  font-size: 19px;
+}
+label.inputtitleleft {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.leftmodulebox select.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: inset 0px 0px 0px #00000003, 0px 0px 30px #00000014;
+  height: 45px!important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
+}
+.mainareabox.mainboxmodule {
+  padding: 0px 0px 30px;
+}
+.homrformcntrl {
+  box-shadow: 0px 0px 6px #00000029;
+  border: 0px!important;
+  height: 50px!important;
+  width: 288px!important;
+  background: #f1f1f1;
+}
+a:hover{text-decoration: none!important;}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%)!important;
+}
+
+.leftmodulebox select.form-control:focus {
+  border-color: #902a8e;
+}
+.dropbtn {
+  background-color: #902a8e;
+  color: white;
+  padding: 5px 16px;
+  font-size: 27px;
+  border: none;
+  border-radius: 10px;
+}
+
+.dropdowncustom {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-contentcustom {
+  display: block;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0px;
+  transform: translateY(34px);
+  transition: all ease 1s;
+  opacity: 0;
+}
+.dropdown-contentcustom a {
+  color: black;
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.dropdown-contentcustom a:hover {background-color: #ddd;}
+
+.dropdowncustom:hover .dropdown-contentcustom {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.dropdowncustom:hover .dropbtn {
+  background-color: #4e4e4e;
+}
+.dropdown-contentcustom a:hover {
+  text-decoration: none;
+  color: #902a8e;
+}
+.flowchartheading h2 {
+  margin-top: 28px;
+  border-bottom: 3px solid lightgray;
+  color: #902a8e;
+  height: 46px;
+}
+
+/* session css start */
+.backbuttoninnerimg img {
+  width: 50px;
+  margin: 28px 17px 35px 0px;
+}
+span.active {
+  color: #902a8e;
+  font-weight: 600;
+}
+.maintextsection {
+  box-shadow: 0px 0px 4px #00000029;
+  padding: 34px;
+  border-radius: 20px;
+}
+.maintexttitle {
+  font-weight: 800;
+  margin-left: 6px;
+}
+.maintextsection p {
+  margin-bottom: 29px;
+  font-size: 13px;
+}
+p.maintextheading {
+  margin: 9px;
+}
+video#vid2 {
+  border-radius: 23px;
 }

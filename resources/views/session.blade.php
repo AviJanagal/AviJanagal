@@ -1,9 +1,9 @@
-@extends('layouts.header')
-@extends('layouts.sidebar')
+@include('layouts.header')
+
 <main class="mt-4 ml-3">
 <div class="main-wrapper">
     <div class="main-container">
-        <div class="main-container-inner">
+        <div class="main-container-inner bx-bg-shadow">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col-lg-12">
@@ -17,7 +17,7 @@
             <div class="main-page-container">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12 col-xl-12 col-md-12">
+                        <div class="col-md-12">
                             @if(Session::get('alert'))
                             <div class="alert alert-{{Session::get('alert')}} alert-dismissible" role="alert">
                                 <p>{{Session::get('message')}}</p>
@@ -25,7 +25,7 @@
                             </div>
                             @endif
                         </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="col-md-12">
                             <div class="add_banner_form">
                                 <h4 class="custom-bg"><?php echo ($type == 1 ) ? "Add Sessions" : "Edit Sessions"; ?></h4>
                             </div>
@@ -33,6 +33,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             @if($type == 1 )
                 <form role="form" data-toggle="validator" action="{{route('session.store')}}" method="post" id="sessionForm" enctype="multipart/form-data">
             @else
@@ -42,16 +45,17 @@
                         @if($type == 2)
                              {{ method_field('PUT') }}
                             @endif
+                            <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-4">
                                 <div class="form-group f-g-o">
                                     <label for="usr">Session Title</label>
-                                    <input type="text" class="form-control" value="<?php echo ($type == 2 ) ? $session->session_title : ''; ?>"name="title"  <?php if($type == 1 ){ echo "required"; }?> placeholder="Module title">
+                                    <input type="text" class="form-control" value="<?php echo ($type == 2 ) ? $session->session_title : ''; ?>"name="title"  <?php if($type == 1 ){ echo "required"; }?> placeholder="Session title">
                                 
                                 </div>
                             </div>
 
-                            <div class="col-lg-12 col-xl-12 col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group f-g-o">
                                     <label for="state">Module ID</label>
                                     <select class="form-control" id="myselect" class="event" name="module_id" >
@@ -66,21 +70,22 @@
                                     </select>
                                 </div>
                             </div>
-
-                            <div class="col-lg-12 col-xl-12 col-md-12">
-                                <label for="usr">Session Description</label>
-                                 <textarea class="form-control" rows="4" name="desc"  id="desc"  <?php if($type == 1 ){ echo "required"; }?> placeholder="Type a Session Description..." spellcheck="false" ><?php echo ($type == 2 ) ? $session->session_desc : ''; ?></textarea>
-                            </div>
-
-                            <div class="col-lg-12 col-xl-12 col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group f-g-o">
                                     <label for="usr">Subject</label>
                                     <input type="text" class="form-control" value="<?php echo ($type == 2 ) ? $session->session_subject : ''; ?>" name="subject" placeholder="Session Subject">
                                     
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                 <div class="form-group f-g-o">
+                                <label for="usr">Session Description</label>
+                                 <textarea class="form-control" rows="4" name="desc"  id="desc"  <?php if($type == 1 ){ echo "required"; }?> placeholder="Type a Session Description..." spellcheck="false" ><?php echo ($type == 2 ) ? $session->session_desc : ''; ?></textarea>
+                            </div>
+ </div>
+                            
 
-                            <div class="col-lg-12 col-xl-12 col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group f-g-o">
                                     <label for="state">Language</label>
                                     <select class="form-control" id="myselect" class="event" name="language">
@@ -96,7 +101,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-12 col-xl-12 col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group f-g-o">
                                     <label for="state">Level</label>
                                     <select class="form-control" id="myselect" class="event" name="level">
@@ -112,7 +117,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-12 col-xl-12 col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group f-g-o">
                                     <label for="usr">Duration</label>
                                     <input type="number" value="<?php echo ($type == 2 ) ? $session->duration : ''; ?>" class="form-control"  <?php if($type == 1 ){ echo "required"; }?> name="duration"  placeholder="eg:30">
@@ -120,6 +125,52 @@
                                 </div>
                             </div>
                             
+                            
+
+                            <div class="col-md-4 ">
+                                <label for="usr">Session Image</label>
+                                <input type="file" class="form-control" placeholder="" <?php if($type == 1 ){ echo "required"; }?> name="image" value="<?php echo ($type == 2 ) ? $session->session_image : ''; ?>"> 
+                                    @if($type == 2 )
+                                        <img src="{{$session->session_image}}" style="width:40px;height:40px">
+                                    @endif
+                            </div>
+                             <div class=" col-md-4">
+                                <div class="form-group f-g-o mt-2">
+                                    <label for="usr">Session Order Number</label>
+                                    <input type="number" class="form-control" value="<?php echo ($type == 2 ) ? $session->position : ''; ?>" name="order" <?php if($type == 1 ){ echo "required"; }?> placeholder="Sesson Order">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group f-g-o">
+                                    <label for="usr">Published By</label>
+                                    <input type="text" value="<?php echo ($type == 2 ) ? $session->published_by : ''; ?>" class="form-control" <?php if($type == 1 ){ echo "required"; }?> name="publish"  placeholder="Published By">
+                                
+                                </div>
+                            </div>
+<div class="col-md-4">
+                                <div class="form-group f-g-o">
+                                    <label class="w-100" for="usr">Status</label>
+                                  @if($type == 1 )
+                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="active" id="active" checked />Active </label>
+                             @else
+                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="active" id="active" {{$session->status == "active" ? "checked" : ""}} />Active </label>
+                            @endif
+                            @if($type == 1 )
+                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="deactive" id="deactive" />Deactive </label>
+                            @else
+                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="deactive" id="deactive" {{$session->status == "deactive" ? "checked" : ""}}/>Deactive </label>
+                            @endif
+                                    
+                                </div>
+                            </div>
+                            
+                           
+                        
+                        <div class="col-md-4">
+                                <div class="form-group f-g-o">
+                                    <label class="w-100" for="usr">Media Type</label>
                             @if($type == 1 )
                             <label class="radio-inline ml-4"> <input type="radio" name="optradio" value="video" id="video" checked />video </label>
                             @else
@@ -130,11 +181,12 @@
                             @else
                             <label class="radio-inline ml-4"> <input type="radio" name="optradio" value="link" id="link" {{$session->media_type == "link" ? "checked" : ""}}/>link </label>
                             @endif
-                           
-                            <div class="col-lg-12 col-xl-12 col-md-12" id="sv">
+                            </div>
+                            </div>
+                            <div class=" col-md-4" id="sv">
                                 <div class="form-group f-g-o">
                                     <label for="usr">video</label>
-                                    <input type="file" class="form-control" id="session_video"  name="video" placeholder="Session video" required>
+                                    <input type="file" class="form-control" id="session_video"  name="video" placeholder="Session video" <?php if($type == 1 ){ echo "required"; }?>>
 
                                     @if($type == 2 && $session->media_type == "video")
                                     <iframe width="80px" height="60px" src="{{$session->media}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -142,61 +194,26 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-12 col-xl-12 col-md-12 d-none" id="sl">
+                            <div class="col-md-4 d-none" id="sl">
                                 <div class="form-group f-g-o">
                                     <label for="usr">link</label>
                                     <input type="url" class="form-control" id="session_link"  name="link" value="<?php echo ($type == 2 && $session->media_type == "link") ? $session->media : ''; ?>"   placeholder="Session link / YouTube">
                                 
                                 </div>
                             </div>
-
-                            <div class="col-lg-12 col-xl-12 col-md-12">
-                                <label for="usr">Session Image</label>
-                                <input type="file" class="form-control" placeholder="" <?php if($type == 1 ){ echo "required"; }?> name="image" value="<?php echo ($type == 2 ) ? $session->session_image : ''; ?>"> 
-                                    @if($type == 2 )
-                                        <img src="{{$session->session_image}}" style="width:40px;height:40px">
-                                    @endif
-                            </div>
-
-                            @if($type == 1 )
-                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="active" id="active" checked />Active </label>
-                             @else
-                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="active" id="active" {{$session->status == "active" ? "checked" : ""}} />Active </label>
-                            @endif
-                            @if($type == 1 )
-                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="deactive" id="deactive" />Deactive </label>
-                            @else
-                            <label class="radio-inline ml-4"> <input type="radio" name="status" value="deactive" id="deactive" {{$session->status == "deactive" ? "checked" : ""}}/>Deactive </label>
-                            @endif
-                            <div class="col-lg-12 col-xl-12 col-md-12">
-                                <div class="form-group f-g-o">
-                                    <label for="usr">Session Order Number</label>
-                                    <input type="number" class="form-control" value="<?php echo ($type == 2 ) ? $session->position : ''; ?>" name="order" <?php if($type == 1 ){ echo "required"; }?> placeholder="Sesson Order">
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-xl-12 col-md-12">
-                                <div class="form-group f-g-o">
-                                    <label for="usr">Published By</label>
-                                    <input type="text" value="<?php echo ($type == 2 ) ? $session->published_by : ''; ?>" class="form-control" <?php if($type == 1 ){ echo "required"; }?> name="publish"  placeholder="Published By">
-                                
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-12 col-xl-12 col-md-12">
                             <div class="form-group">
                                 <button class="btn-style btn-color" type="submit">Save</button>
                             </div>
                         </div>
+                        </div>
                     </form>
-                    </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12">
+                   
+                    <div class="">
                             <div class="cat-box shadow-d data-table-wrapper">
-                                <div class="table-title-main-top"><h3 class="table-title-main">All Modules</h3></div>
+                                <div class="table-title-main-top"><h4 class="custom-bg">All Sessions</h4></div>
                                 <div class="table-wrapper">
-                                  <table class="datatable table table-striped table-bordered" id="users" style="width:100%"> 
+                                  <table class="datatable table table-striped table-bordered myTableTh" id="users" style="width:100%"> 
                                     <thead>
                                         <tr>
                                             <th>ID</th>
@@ -221,15 +238,29 @@
                                             <td>{{$session->session_title}}</td>
                                             <td>{{$session->session_desc}}</td>
                                             <td>{{$session->session_subject}}</td>
-                                            <td>{{$session->language}}</td>
-                                            <td>{{$session->level}}</td>
+                                            <?php
+                                                $language = \App\Language::where('id',$session->language)->value('language'); 
+                                            ?>
+                                            <td>{{$language}}</td>
+                                            <?php
+                                                $level = \App\Level::where('id',$session->level)->value('type'); 
+                                            ?>
+                                            <td>{{$level}}</td>
                                             <td>{{$session->duration}}</td>
                                             @if($media_type = 'video')
                                             <td>
-                                            <iframe width="80px" height="60px" src="{{$session->media}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <video id="chkdur" width="80px" height="60px" controls>
+                                                    <source src="{{$session->media}}"
+                                                        type="video/mp4">
+                                                    Your browser does not support HTML5 video.
+                                                </video>
                                             </td>
                                             @else
-                                            <iframe width="80px" height="60px" src="{{$session->media}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <video id="chkdur" width="80px" height="60px" controls>
+                                                    <source src="{{$session->media}}"
+                                                        type="video/mp4">
+                                                    Your browser does not support HTML5 video.
+                                                </video>
                                            
                                             @endif
                                             <td>{{$session->status}}</td>
@@ -238,6 +269,7 @@
                                             <td>
                                                 <a href="{{$session->image}}"><img style="width:40px;height:40px;" id="blah" target="_blank" src="{{$session->session_image}}" />
                                             </td>
+                                         
                                             <td>
                                                 <a href="{{ route('session.edit', $session->id) }}" class="btn btn-primary btn-xs"> <i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                 <a onClick = "deleteData('{{route('session.destroy',$session->id)}}');" class="btn btn-danger mb-0 btn-xs"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
@@ -260,4 +292,4 @@
 
 
 
-@extends('layouts.footer')
+@include('layouts.footer')

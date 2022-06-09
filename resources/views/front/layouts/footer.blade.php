@@ -15,8 +15,9 @@
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
 	<script src="{{asset('js/owl.carousel.js')}}"></script>
 	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
         
         <script>
             $( "#myform" ).validate({

@@ -1,3 +1,7 @@
+
+	<!-- main start-->
+
+<!-- 
 <div class="sidemenu-wrapper">
     <div class="sidemenu">
         <div class="logo">
@@ -18,6 +22,10 @@
                 <li>
                     <a class="{{ (request()->is('session')) ? 'active' : '' }}" href="{{route('session.index')}}"><img class="" src="{{asset('images/sidebar-icon-1.png')}}" /><span class="menuname">Session</span></a>
                 </li>
+
+                <li>
+                    <a class="{{ (request()->is('all_students')) ? 'active' : '' }}" href="{{route('all_students')}}"><img class="" src="{{asset('images/sidebar-icon-1.png')}}" /><span class="menuname">All Students</span></a>
+                </li>
                 
                 <li>
                     <a class="{{ (request()->is('logout')) ? 'active' : '' }}" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
@@ -31,4 +39,4 @@
             </ul>
         </nav>
     </div>
-</div>
+</div> -->

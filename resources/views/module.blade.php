@@ -1,9 +1,9 @@
-@extends('layouts.header')
-@extends('layouts.sidebar')
+@include('layouts.header')
+
 <main class="mt-4 ml-3">
 <div class="main-wrapper">
     <div class="main-container">
-        <div class="main-container-inner">
+        <div class="main-container-inner  bx-bg-shadow">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col-lg-12">
@@ -19,10 +19,10 @@
                     <div class="row">
                         <div class="col-lg-12 col-xl-12 col-md-12">
                             @if(Session::get('alert'))
-                                <div class="alert alert-{{Session::get('alert')}} alert-dismissible" role="alert">
-                                <p>{{Session::get('message')}} </p>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
+                            <div class="alert alert-{{Session::get('alert')}} alert-dismissible" role="alert">
+                            <p>{{Session::get('message')}} </p>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
                             @endif
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12">
@@ -43,7 +43,7 @@
                             <div class="row">
                     
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                    
                                         
                                      
@@ -53,14 +53,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-12 col-xl-12 col-md-12">
-                                        <label for="usr">Module Description</label>
-                                         <textarea class="form-control" rows="4" name="desc" <?php if($type == 1 ){ echo "required"; }?>id="desc" placeholder="Type a Module Description..." spellcheck="false" required><?php echo ($type == 2 ) ? $module->module_description : ''; ?></textarea>
-                                        <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="col-lg-12 col-xl-12 col-md-12">
+                               <div class="col-lg-6 col-xl-6 col-md-6">
                                     <div class="form-group f-g-o">
                                         <label for="usr">Module Image</label>
                                         <input type="file" class="form-control" placeholder="" name="image" value=""  <?php if($type == 1 ){ echo "required"; } ?>>
@@ -75,23 +68,30 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
+                                <div class="col-lg-12 col-xl-12 col-md-12">
+                                        <label for="usr">Module Description</label>
+                                         <textarea class="form-control" rows="4" name="desc" <?php if($type == 1 ){ echo "required"; }?>id="desc" placeholder="Type a Module Description..." spellcheck="false" required><?php echo ($type == 2 ) ? $module->module_description : ''; ?></textarea>
+                                        <div class="help-block with-errors"></div>
+                                </div>
+
+                                
           
                                 
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xl-12 col-md-12 catgory-btn-save">
+                                <div class="catgory-btn-save">
                                     <div class="form-group"><button class="btn-style btn-color" type="submit">Save</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                         </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12">
+                        
+                        <div class="">
                             <div class="cat-box shadow-d data-table-wrapper">
-                                <div class="table-title-main-top"><h3 class="table-title-main">All Modules</h3></div>
+                                <div class="table-title-main-top"><h4 class="custom-bg">All Modules</h4></div>
                                 <div class="table-wrapper">
-                                  <table class="datatable table table-striped table-bordered" id="users" style="width:100%"> 
+                                  <table class="datatable table table-striped table-bordered myTableTh" id="users" style="width:100%"> 
                                     <thead>
                                         <tr>
                                             <th>ID</th>
@@ -127,9 +127,10 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
 </div>
 </main>
 
 
-@extends('layouts.footer')
+@include('layouts.footer')

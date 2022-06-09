@@ -11,7 +11,7 @@ h6,
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Roboto", sans-serif;
 }
 .banar {
   background: url(../images/back.jpeg);

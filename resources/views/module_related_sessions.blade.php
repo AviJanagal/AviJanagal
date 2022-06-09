@@ -1,5 +1,5 @@
-@extends('layouts.header')
-@extends('layouts.sidebar')
+@include('layouts.header')
+
 <main class="mt-4 ml-3">
 <div class="main-wrapper ">
         <div class="main-container">
@@ -29,11 +29,9 @@
 
                             <div class="col-lg-12 col-xl-12 col-md-12">
                                 <div class="cat-box shadow-d data-table-wrapper">
-                                    <div class="table-title-main-top">
-                                        <h3 class="table-title-main">Module Related Sessions</h3>
-                                    </div>
+                                    <div class="table-title-main-top"><h4 class="custom-bg">Module Related Sessions</h4></div>
                                     <div class="table-wrapper">
-                                        <table id="example" class="datatable table table-striped table-bordered"
+                                        <table id="example" class="datatable table table-striped table-bordered myTableTh"
                                             style="width:100%">
                                             <thead>
                                                 <tr>
@@ -96,4 +94,4 @@
     </div>
 </main>
 
-@extends('layouts.footer')
+@include('layouts.footer')
