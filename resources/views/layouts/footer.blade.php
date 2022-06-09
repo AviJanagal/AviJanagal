@@ -116,6 +116,7 @@ $( "#myform" ).validate({
            minlength : 6
 		},
         password : {
+            required: true,
             minlength : 8
         },
         password_confirmation : {
@@ -123,6 +124,7 @@ $( "#myform" ).validate({
             equalTo : "#password"
         },
         email : {
+            required: true,
             email: true,
             minlength : 8
         },
