@@ -13,7 +13,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th> Name</th>
+                    <th>Name</th>
                     <th> state</th>
                     <th> phone_number</th>
                     <th> View</th>
